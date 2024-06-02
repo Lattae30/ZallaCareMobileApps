@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserEdit"
+    android:id="@+id/userEdit"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/square_bg">
+        <ImageView
+            android:id="@+id/editBackBtn"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/ic_back_2"
+            android:backgroundTint="@color/primary_2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Edit Your Profile"
+            android:textColor="@color/primary_2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/check"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/ic_check_2"-->
+<!--            android:background="@color/nav"-->
+<!--            android:layout_marginStart="305dp"-->
+<!--            android:layout_marginTop="15dp"/>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImgEdit"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            android:background="@color/primary"/>
+<!--        <Button-->
+<!--            android:id="@+id/btnChangeImg"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/ic_baseline_photo_camera_24"-->
+<!--            android:layout_marginTop="-20dp"-->
+<!--            android:layout_marginStart="225dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Change Profile Photo"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:fontFamily="@font/roboto_medium"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="@color/black"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <!--EMAIL SECTION-->
+            <TextView
+                android:id="@+id/EditEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Edit Email >"
+                android:textColor="@color/grey_font"
+                android:textSize="14dp"
+                android:layout_gravity="end"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="-25dp"
+                android:layout_marginStart="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded">
+                <EditText
+                    android:id="@+id/emailFieldEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:text="freylicy@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+
+    <!--PASSWORD SECTION-->
+            <TextView
+                android:id="@+id/EditPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Edit Password >"
+                android:textColor="@color/grey_font"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="-18dp"
+                android:layout_marginStart="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded">
+                <EditText
+                    android:id="@+id/passwordFieldEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Current Password"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:text="**********"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+
+        <!-- PHONE NUMBER SECTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded">
+                <EditText
+                    android:id="@+id/pNumberFieldEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Current Password"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:text="081356798845"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+
+        <!-- ADDRESS SECTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded">
+                <EditText
+                    android:id="@+id/addressEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Current Password"
+                    android:maxLines="3"
+                    android:gravity="center_vertical"
+                    android:text="Jl. Moh. Hatta No.93,Rt. 03/Rw. 04, Depok - Jawa Barat, 15561"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_button"
+                android:text="Save Changes"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

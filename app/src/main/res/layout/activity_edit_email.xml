@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEmail"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/nav">
+        <ImageButton
+            android:id="@+id/changeEmailBackBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back_2"
+            android:background="@color/nav"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Change Email"
+            android:textColor="@color/bgColor"
+            android:textSize="18dp"
+            android:layout_marginStart="92dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/ic_email"/>
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:background="@drawable/rounded"
+            android:hint="Enter your new email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginStart="15dp"/>
+        <Button
+            android:id="@+id/btnSendVerify"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_carousel"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Send Verification Code"
+            android:textColor="@color/bgColor"
+            android:fontFamily="@font/roboto_bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

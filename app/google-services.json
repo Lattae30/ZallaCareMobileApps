@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "89911317738",
+    "firebase_url": "https://zalla-a764b-default-rtdb.firebaseio.com",
+    "project_id": "zalla-a764b",
+    "storage_bucket": "zalla-a764b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89911317738:android:dfd1df0eb9b85abb317393",
+        "android_client_info": {
+          "package_name": "com.example.zalla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89911317738-gpp1h5td5veqgo0pobmlsp5n7cdefbo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaIiakzi-eYwS23Auz8NI8RrDqS0oYXfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89911317738-gpp1h5td5veqgo0pobmlsp5n7cdefbo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background ="@color/white"
+    tools:context=".PaymentCode">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/square_bg"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Payment"
+        android:textColor="@color/primary_2"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#BDB8B8"
+        android:layout_toStartOf="@id/top"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Number"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="230409ABCDIJ"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Payment"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Rp95.000"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deadline"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Mon, 25 April 2023"
+            android:textSize="16sp"
+            android:textColor="@color/primary_3"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDB8B8"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Bank Mandiri"
+        android:textSize="16sp"
+        android:textColor="@color/primary_3"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Virtual Account Code"
+        android:textSize="16sp"
+        android:textColor="@color/primary_3"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/codeVirtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="88702134888800"
+                android:textColor="@color/primary_3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/copyBtn"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/copy_icon"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDB8B8"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Payment Instructions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_3"/>
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BDB8B8"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="1. Select Payment / Purchase'\n2. Select 'Others', then select 'Multipayment'
+        \n3. Input the company code '1234' and choose correct\n4. Input the Virtual Account Number and choose Correct\n5. Check the Information on screen again and choose 'Yesy'"
+        android:textSize="16sp"
+        android:textColor="@color/primary_3"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/okPayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_button"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

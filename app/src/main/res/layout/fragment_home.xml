@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+<!--    SEARCH & CATEGORY BUTTON SECTION-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="25dp">-->
+<!--        &lt;!&ndash;  SEARCH VIEW SECTION   &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginEnd="35dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:cardCornerRadius="5dp"-->
+<!--            android:layout_marginBottom="5dp">-->
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/sv"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:padding="5dp" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </RelativeLayout>-->
+
+
+    <!--    HORIZONTAL SCROLL VIEW-->
+    <HorizontalScrollView
+        android:id="@+id/horizontalSVCatefories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:paddingHorizontal="15dp"
+        android:paddingEnd="40dp">
+        <LinearLayout
+            android:id="@+id/linearLayoutHoriSVCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clipToPadding="false"
+                android:padding="12dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<!--    CAROUSEL SECTION    -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp">
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/image_slider"
+            app:iss_period="2000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="2000"
+            app:iss_corner_radius="15"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    ZALLA'S CARE PRODUCT TITLE & SEE MORE SECTION   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp">
+        <!--  ZALLA'S CARE PRODUCT TEXT VIEW  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zalla's Care Product"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"/>
+        <!-- SEE MORE TEXT VIEW   -->
+        <TextView
+            android:id="@+id/seeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="35dp"
+            android:text="See more >"
+            android:fontFamily="@font/roboto_medium"/>
+    </RelativeLayout>
+
+<!--    UNDERLINE IMAGE     -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="398dp"
+        android:src="@drawable/ic_under_line_black"
+        android:layout_centerHorizontal="true" />
+
+<!--    HORIZONTAL SCROLL VIEW-->
+    <HorizontalScrollView
+        android:id="@+id/horizontalSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp">
+        <LinearLayout
+            android:id="@+id/linearLayoutHoriSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clipToPadding="false"
+                android:padding="12dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
